@@ -1,0 +1,33 @@
+/* Take users text input and encrypt it using a rotation cipher
+ key = 1, so it will shift letters by one 
+ Input upper case letters only
+ */
+
+
+#include <stdio.h>
+#include <string.h>
+
+
+//Prototype of the 
+void rotCipher(char *UserText, int key);
+
+
+int main(void){
+    int key;
+    char UserText[200];
+    
+    printf("Please enter text to encrypt: "); //ask user for text for the cipher
+    
+    fgets(UserText, sizeof(UserText), stdin); //Store input inside of 'UserText' 
+    
+    
+    rotCipher( *UserText, key);
+    
+    }
+ 
+//Function Definition
+void rotCipher(char *UserText, int key){
+    int n=0;
+    int nameValue;
+    char encryption;
+}
